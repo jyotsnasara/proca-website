@@ -1,8 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `ProCa`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    name: `ProCa`,
+    title: `ProCa: Progressive Campaigning Tools as a Service`,
+    description: `Petition widget for civil society and grassroot movements`,
+    author: `@eucampaign`,
+    logo : `logo.png`,
   },
   plugins: [
     {

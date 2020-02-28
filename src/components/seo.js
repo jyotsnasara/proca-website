@@ -19,6 +19,7 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
+            logo
           }
         }
       }
@@ -34,6 +35,7 @@ function SEO({ description, lang, meta, title }) {
       }}
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
+      favicon= "/favicon.ico"
       meta={[
         {
           name: `description`,
@@ -67,6 +69,15 @@ function SEO({ description, lang, meta, title }) {
           name: `twitter:description`,
           content: metaDescription,
         },
+        {
+          name :`twitter:image`,
+          content:"/"+site.siteMetadata.logo,
+        },
+        {
+          name :`og:image`,
+          content: "/"+site.siteMetadata.logo,
+        },
+
       ].concat(meta)}
     />
   )
