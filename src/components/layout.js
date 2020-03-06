@@ -8,11 +8,23 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import theme from "./../theme";
+import GlobalStyles from "./../GlobalStyles";
+
 
 import Header from "./header"
 //import "./layout.css"
-import { Container, Paper } from "@material-ui/core"
+import { withStyles, MuiThemeProvider, CssBaseline } from "@material-ui/core";
+
+const styles = theme => ({
+  wrapper: {
+    backgroundColor: theme.palette.common.white
+  }
+});
+
+
 const Layout = ({ children }) => {
+  const classes = styles;
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -23,14 +35,17 @@ const Layout = ({ children }) => {
     }
   `)
 
+      //<Header siteTitle={data.site.siteMetadata.title} />
   return (
-    <Paper elevation={0}>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <Container maxWidth="xl">
-        <main>{children}</main>
-      </Container>
+    <div className={classes.wrapper}>
+    <MuiThemeProvider theme={theme}>
+            <CssBaseline />
+        <GlobalStyles />
+
+      {children}
       <footer></footer>
-    </Paper>
+    </MuiThemeProvider>
+    </div>
   )
 }
 
@@ -38,4 +53,6 @@ Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-export default Layout
+export default Layout;
+
+//export default withStyles(styles, { withTheme: true })(Layout);

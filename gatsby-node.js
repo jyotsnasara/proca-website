@@ -24,6 +24,13 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
             frontmatter {
               path
             }
+        parent {
+          ... on File {
+            name
+            relativePath
+            sourceInstanceName
+          }
+        }
           }
         }
       }
@@ -37,10 +44,22 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   }
 
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    if (!node.frontmatter.path) {
+      node.frontmatter.path = '/draft/' + node.parent.name;
+      console.error(node.parent.name + ".md doesn't have a frontmatter.path -> "+node.frontmatter.path);
+      //node.frontmatter.path = "/" + node.parent.sourceInstanceName + '/' + node.parent.name;
+    }
+    if (!node.frontmatter.title) {
+      node.frontmatter.title="DRAFT " + node.parent.name;
+    }
+    try {
     createPage({
       path: node.frontmatter.path,
       component: blogPostTemplate,
       context: {}, // additional data can be passed via context
     })
+    } catch (e) {
+      console.log(e);
+    }
   })
 }
