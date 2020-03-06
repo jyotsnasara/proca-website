@@ -7,7 +7,6 @@ import {
   isWidthUp,
   withWidth,
   withStyles,
-  Box,
   Button,
 } from "@material-ui/core"
 import calculateSpacing from "./calculateSpacing"
@@ -70,16 +69,13 @@ function DemoSection(props) {
             className={classes.cardWrapperHighlighted}
             xs={12}
             sm={6}
-            lg={3}
             data-aos="zoom-in-up"
             data-aos-delay="200"
           >
-            <Box p={3}>
               <p>Add a petition in your website in 2 minutes</p>
               <Button variant="contained" color="primary" onClick={addForm}>
                 Add the signature form <DoubleArrowIcon />
               </Button>
-            </Box>
           </Grid>
           <Grid
             item
@@ -89,7 +85,6 @@ function DemoSection(props) {
             data-aos="zoom-in-up"
           >
             <div id="proca-form">
-              <Box p={3}>
                 <p>❶ add this html code where you want the widget: </p>
                 <pre>{'<div id="proca-form" />'}</pre>
                 <p>❷ add this html code anywhere in your page: </p>
@@ -102,7 +97,6 @@ function DemoSection(props) {
                   <br />
                   {' data-mode="form" action="1"> </script>'}
                 </pre>
-              </Box>
             </div>
           </Grid>
         </Grid>

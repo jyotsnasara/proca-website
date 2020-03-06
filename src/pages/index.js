@@ -1,4 +1,4 @@
-import React,{Fragment} from "react"
+import React,{Fragment,useEffect} from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -7,8 +7,7 @@ import FeatureSection from "../components/home/FeatureSection"
 import DemoSection from "../components/home/DemoSection"
 
 import AOS from "aos/dist/aos";
-
-AOS.init({ once: true });
+import "aos/dist/aos.css";
 
 
 const addForm = params => {
@@ -22,6 +21,7 @@ const addForm = params => {
 }
 
 const IndexPage = () => {
+  useEffect(()=>{AOS.init({ once: true })},[]);
   return (
     <Layout>
       <SEO title="ProCa: Progressive Campaigning into your website made easy" />

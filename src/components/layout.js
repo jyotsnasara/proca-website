@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import theme from "./../theme";
 import GlobalStyles from "./../GlobalStyles";
+import NavBar from "./NavBar";
 
 
 import Header from "./header"
@@ -35,6 +36,8 @@ const Layout = ({ children }) => {
     }
   `)
 
+  const selectedTab = "home";
+  const selectTab = () => console.log("select");
       //<Header siteTitle={data.site.siteMetadata.title} />
   return (
     <div className={classes.wrapper}>
@@ -43,6 +46,11 @@ const Layout = ({ children }) => {
         <GlobalStyles />
 
       {children}
+            <NavBar
+          selectedTab={selectedTab}
+          selectTab={selectTab}
+        />
+
       <footer></footer>
     </MuiThemeProvider>
     </div>

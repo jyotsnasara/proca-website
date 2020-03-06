@@ -47,6 +47,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     if (!node.frontmatter.path) {
       node.frontmatter.path = '/draft/' + node.parent.name;
       console.error(node.parent.name + ".md doesn't have a frontmatter.path -> "+node.frontmatter.path);
+      return;
       //node.frontmatter.path = "/" + node.parent.sourceInstanceName + '/' + node.parent.name;
     }
     if (!node.frontmatter.title) {
