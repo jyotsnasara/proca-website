@@ -1,3 +1,5 @@
+const path = require("path");
+
 module.exports = {
   siteMetadata: {
     name: `ProCa`,
@@ -15,6 +17,14 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: ['.mdx','.md'],
+        aaadefaultLayouts: { default: path.resolve('./src/components/layout.js') },
+      },
+    },
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {

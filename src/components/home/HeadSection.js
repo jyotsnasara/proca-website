@@ -73,6 +73,9 @@ const styles = theme => ({
     maxHeight: 444,
     verticalAlign: "middle",
   },
+  heroimage: {
+    textAlign:'right',
+  },
   container: {
     marginTop: theme.spacing(6),
     marginBottom: theme.spacing(12),
@@ -94,7 +97,7 @@ const styles = theme => ({
 });
 
 function HeadSection(props) {
-  const { classes, theme, width } = props;
+  const { classes, width } = props;
   return (
     <Fragment>
       <div className={classNames("lg-p-top", classes.wrapper)}>
@@ -149,7 +152,7 @@ function HeadSection(props) {
                     </Box>
                   </Grid>
                   <Hidden smDown>
-                    <Grid item md={6}>
+                    <Grid item md={6} className={classes.heroimage}>
                       <Logo className={classes.logo}/>
                     </Grid>
                   </Hidden>

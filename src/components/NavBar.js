@@ -13,9 +13,6 @@ import {
 import Logo from "../images/logo.svg";
 import MenuIcon from "@material-ui/icons/Menu";
 import HomeIcon from "@material-ui/icons/Home";
-import HowToRegIcon from "@material-ui/icons/HowToReg";
-import LockOpenIcon from "@material-ui/icons/LockOpen";
-import BookIcon from "@material-ui/icons/Book";
 
 const styles = theme => ({
   appBar: {
@@ -44,7 +41,6 @@ const styles = theme => ({
 function NavBar(props) {
   const {
     classes,
-    selectedTab
   } = props;
   const menuItems = [
     {
@@ -55,17 +51,15 @@ function NavBar(props) {
     {
       link: "#feature",
       name: "Features",
-      icon: <BookIcon className="text-white" />
     },
     {
       link: "#demo",
       name: "demo",
-      icon: <HowToRegIcon className="text-white" />
     },
   ];
   return (
     <div className={classes.root}>
-      <AppBar position="fixed" className={classes.appBar}>
+      <AppBar position="fixed" className={classes.appBar} color="inherit">
         <Toolbar className={classes.toolbar}>
           <div>
         <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">

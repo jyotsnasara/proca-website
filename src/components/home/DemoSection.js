@@ -4,7 +4,6 @@ import classNames from "classnames"
 import {
   Grid,
   Typography,
-  isWidthUp,
   withWidth,
   withStyles,
   Button,
@@ -95,7 +94,7 @@ function DemoSection(props) {
                     ' src="https//widget.proca.foundation/static/js/main.0-1.js"'
                   }
                   <br />
-                  {' data-mode="form" action="1"> </script>'}
+                  {' data-mode="form" data-page="2"> </script>'}
                 </pre>
             </div>
           </Grid>
@@ -111,6 +110,7 @@ const addForm = params => {
   //s.src="http://localhost:3000/static/js/bundle.js";
   s.type = "text/javascript"
   s.dataset.mode = "form"
+  s.dataset.page = "2"
   s.id = "proca"
   document.getElementsByTagName("head")[0].appendChild(s)
 }
