@@ -11,7 +11,7 @@
     "@mdx-js/react": "^1.0.0-rc.5",
     "aos": "^2.3.4",
     "classnames": "^2.2.6",
-    "gatsby": "^2.19.28",
+    "gatsby": "^2.20.36",
     "gatsby-image": "^2.2.42",
     "gatsby-mdx": "^1.0.0",
     "gatsby-plugin-manifest": "^2.3.6",
