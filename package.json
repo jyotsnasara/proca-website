@@ -32,7 +32,7 @@
     "react-use-queries": "^1.0.0"
   },
   "devDependencies": {
-    "@svgr/webpack": "^5.2.0",
+    "@svgr/webpack": "^5.4.0",
     "gatsby-plugin-svgr-loader": "^0.1.0",
     "prettier": "^2.0.5"
   },
