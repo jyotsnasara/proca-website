@@ -22,30 +22,30 @@ const features = [
   {
     color: "#00C853",
     headline: "Petition Signature Widget",
-    subtitle: "We add our petition in your site",
+    subtitle: "You can add a Proca petition to your site.",
     text:
-      "No need for another password nor to learn a new CMS. All your campaign content is managed in your website",
+      "There's no need to store another password, or learn whole new website tool. All your campaign content is managed in your existing website.",
     icon: <WidgetsIcon style={{ fontSize: iconSize }} />,
     mdDelay: "0",
     smDelay: "0"
   },
   {
     color: "#6200EA",
-              headline:"Made for NGOs' networks and grassroot",
+              headline:"Made for NGOs, campaigning networks and grassroots activists",
           subtitle:"multiple websites, same campaign",
           icon:<EmojiPeopleIcon style={{ fontSize: iconSize }} />,
 
     text:
-      "You can have as many signature's forms as you want. We count the signatures together, we keep the contact details separate",
+      "You can have as many signatures forms as you want. We count the signatures together, and we keep your supporter's contact details separate.",
     mdDelay: "200",
     smDelay: "200"
   },
   {
     color: "#0091EA",
     headline: "The most privacy friendly campaign tool",
-    subtitle:"Full GDPR compliant, full encryption option",
+    subtitle:"Fully GDPR compliant, with a full encryption option.",
     text:
-      "We have the option to fully encrypt your supporters signature, so only you can access their data",
+      "We have the option to fully encrypt your supporter's signatures, so only you can access their data",
     icon: <FingerprintIcon style={{ fontSize: iconSize }} />,
     mdDelay: "400",
     smDelay: "0"
@@ -55,7 +55,7 @@ const features = [
     headline: "Sharing is caring",
     subtitle:"Let your supporters multiply their impact",
     text:
-      "We make it easy to share on social media or email, and give you insight about which social media works best",
+      "We make it easy to share on social media or email, and give you insight about which social media platforms are growing your campaign best.",
     icon: <ShareIcon style={{ fontSize: iconSize }} />,
     mdDelay: "0",
     smDelay: "200"
@@ -63,9 +63,9 @@ const features = [
   {
     color: "#DD2C00",
     headline: "Integrated with your CRM",
-    subtitle: "email your supporters directly from your contact database",
+    subtitle: "Email your supporters directly from your contact database",
     text:
-      "Our tool adds your supporters directly in your CiviCRM or mailchimp, so you can update them on your campaign.",
+      "Our tool adds your supporters directly in your CiviCRM or Mailchimp, so you can update them on your campaign.",
     icon: <LinkIcon style={{ fontSize: iconSize }} />,
     mdDelay: "200",
     smDelay: "0"
@@ -75,7 +75,7 @@ const features = [
     headline: "For progressive organisations",
     subtitle:"By progressive technologists and campaigners",
 
-    text:"Our tool is opensource, our values are progressive and our community is inclusive",
+    text:"Our tool is open source, our values are progressive and our community is inclusive.",
     icon: <FavoriteBorderIcon style={{ fontSize: iconSize }} />,
     mdDelay: "400",
     smDelay: "200"
