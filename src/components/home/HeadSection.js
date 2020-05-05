@@ -132,9 +132,9 @@ function HeadSection(props) {
                             variant={isWidthUp("lg", width) ? "h6" : "body1"}
                             color="textSecondary"
                           >
-                We have worked for some of the biggest online campaigning
-            organisations, learnt what works and implemented them in an easy to
-            use campaigning tool so you can benefit from it.
+                We've worked for some of the biggest online campaigning
+            organisations, and learnt what works. Now, we've brought international 
+best practice to Proca - an easy to use campaigning tool - so you can benefit from it. 
 
                           </Typography>
                         </Box>
