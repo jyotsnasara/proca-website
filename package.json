@@ -7,7 +7,7 @@
     "@material-ui/core": "^4.9.4",
     "@material-ui/icons": "^4.9.1",
     "@material-ui/styles": "^4.9.0",
-    "@mdx-js/mdx": "^1.0.0-rc.4",
+    "@mdx-js/mdx": "^1.6.1",
     "@mdx-js/react": "^1.0.0-rc.5",
     "aos": "^2.3.4",
     "classnames": "^2.2.6",
