@@ -91,10 +91,10 @@ function DemoSection(props) {
                   {'<script id="proca"'}
                   <br />
                   {
-                    ' src="https//widget.proca.foundation/static/js/main.0-1.js"'
+                    ' src="https//widget.proca.foundation/d"'
                   }
                   <br />
-                  {' data-mode="form" data-page="2"> </script>'}
+                  {'"> </script>'}
                 </pre>
             </div>
           </Grid>
@@ -106,8 +106,8 @@ function DemoSection(props) {
 
 const addForm = params => {
   var s = document.createElement("script")
-  s.src = "https://widget.proca.foundation/static/js/main.0-1.js"
-  //s.src="http://localhost:3000/static/js/bundle.js";
+  s.src = "https://widget.proca.foundation/d/proca.foundation"
+  //s.src="http://localhost:5000/d/proca.foundation/index.js";
   s.type = "text/javascript"
   s.dataset.mode = "form"
   s.dataset.page = "2"
