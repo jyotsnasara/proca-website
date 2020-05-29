@@ -47,7 +47,7 @@ const Layout = (props) =>{
       {children}
     <Header siteTitle={data.site.siteMetadata.title} />
 
-      <footer></footer>
+      <footer>Proudly created by FIX THE STATUS QUO, estonia</footer>
     </MuiThemeProvider>
     </div>
   );

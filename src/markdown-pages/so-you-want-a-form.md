@@ -32,12 +32,13 @@ How to display success? replace the form by a thank you message? next action? eg
 
 # Make it fast (or give that feeling): Ajax submission
 
-# From good to great
+# One last thing
 
 Improving the way you ask the consent: going from checkboxes to radios
 Make it easier to the user: pre-select the country based on the IP address
 native validation HTML5
-autoComplete
+pre-fill from autoComplete
+pre-fill from url
 
 # Ongoing journey
 
