@@ -19,6 +19,9 @@ GDPR: need explicit consent (ie checkbox)
 # Handling presentation
 mobile friendly, accessibility, placeholder, label, consistancy between browsers.
 
+## greater mobile experience
+FAB
+
 # Handling errors
 
 Missing fields, incorrect values,
